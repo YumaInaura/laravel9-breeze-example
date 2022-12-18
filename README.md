@@ -1,13 +1,18 @@
+# プロジェクトを作成
 
 ```
 composer create-project "laravel/laravel=9.*" laravel9-breeze
 cd laravel9-breeze
 ```
 
+# Breezeのインストール
+
 ```
 composer require laravel/breeze
 php artisan breeze:install
 ```
+
+# ルートの確認
 
 ```
 php artisan route:list
@@ -39,9 +44,13 @@ php artisan route:list
   GET|HEAD  verify-email/{id}/{hash} .............................................. verification.verify › Auth\VerifyEmailController@__invoke
 ```
 
+# マイグレーション
+
 ```
 php artisan migrate
 ```
+
+# ユーザーを作成
 
 ```
 php artisan tinker
@@ -54,8 +63,13 @@ php artisan tinker
 ```
 
 
+# サーバー起動
 
 php artisan serve
 
 
+# 画面にアクセス
+
 Access to http://127.0.0.1:8000/login
+
+![image](https://user-images.githubusercontent.com/13635059/208288401-281d2a23-703d-46c3-85c7-7e9807e44f5d.png)
